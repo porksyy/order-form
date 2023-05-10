@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "logo">
+        <img src="ABING_orderSubmission_CSAD/ABING_IMAGES_CSAD/logo.png">
+        <h4>Welcome to Bistro O-Two.</h4>
+        <h5>Take a look at our selection of foods below:</h5>
+    </div>
+
+    <div class = "food" align="center">
+        <div class = "submenu">
+            <img src = "ABING_orderSubmission_CSAD/ABING_IMAGES_CSAD/borgir.jpeg">
+        </div>
+
+        <div class = "submenu">
+            <img src = "ABING_orderSubmission_CSAD/ABING_IMAGES_CSAD/pasta.jpeg">
+        </div>
+
+        <div class = "submenu">
+            <img src = "ABING_orderSubmission_CSAD/ABING_IMAGES_CSAD/prench prays.jpeg">
+        </div>
+
+        <div class = "submenu">
+            <img src = "ABING_orderSubmission_CSAD/ABING_IMAGES_CSAD/soda.jpeg">
+        </div>
+    </div>
+
+
+    <div class ="cusform" align="center">
+        <form>
+            <h2>Customer Information</h2>
+            <label for="fullname">Full Name:</label><br>
+            <input class="textForm" type="text" name="fullname" placeholder="e.g. Tzuyu Smith" autofocus required><br>
+
+            <label for="address">Address:</label><br>
+            <textarea class="textForm" name="address" placeholder="e.g. 1738 Street" autofucs required></textarea><br>
+
+            <label for="contact">Contact Number:</label><br>
+            <input class="textForm" type="text" name="contact" placeholder="e.g. 091236758463"  pattern="[0-9]+"required><br>
+
+            <label for="email">Email Address:</label><br>
+            <input class="textForm" type="text" name="emailadd" placeholder="e.g. tzy@hotmail.com"required><br>
+
+            <label for="addtl_add">Additional Details for Address:</label><br>
+            <textarea class="textForm" name="addtl_address" placeholder="e.g. Gray Roof, Brown Gate" autofucs required></textarea><br>
+
+        </form>
+    </div>
+
+    <div class ="foodform" align="center">
+        <form>
+            <h2>Order Form</h2>
+            <h3>Burgers</h3>
+            <label for ="pattyqty">No. Of Patties</label><br>
+            <label for="patty">Single Patty:</label>
+            <input type="radio" name="patty-qty" value="single-patty" required CHECKED>
+            <label for="patty">Double Patty:</label>
+            <input type="radio" name="patty-qty" value="double-patty"><br><br>
+
+            <!-- ADD ONS -->
+            <label for="addtl">Add-Ons</label><br> 
+            <label for="addtl">Cheese</label>
+            <input type="checkbox" name="cside" value="addtl-cheese">
+
+            <label for="addtl">Coleslaw</label>
+            <input type="checkbox" name="clside" value="addtl-coleslaw">
+
+            <label for="addtl">Tomato</label>
+            <input type="checkbox" name="tside" value="addtl-tomato">
+
+            <label for="addtl">Onion</label>
+            <input type="checkbox" name="oside" value="addtl-onion">
+
+            <label for="addtl">Cucumber</label>
+            <input type="checkbox" name="cuside" value="addtl-cucumber">
+
+            <label for="addtl">Bacon</label>
+            <input type="checkbox" name="bside" value="addtl-bacon"><br><br>
+
+            <!-- BUN TYPE -->
+            <label for="bun-type">Choice of Bun:</label><br>
+            <select name="bun-type">
+                <option value="white-bun">White Bun</option>
+                <option value="wheat-bun">Wheat Bun</option>
+                <option value="honey-oat">Honey Oat</option>
+                <option value="sugar-free">Sugar-Free</option>
+            </select><br>
+
+            <!-- QTY -->
+            <label for="burger-quantity">Quantity:</label><br>
+            <input type="number" name="qty" min="1" max="10" value="1"><br><br><br>
+
+            <!-- PASTA -->
+            <h3>Pasta</h3>
+            <label for="bun-type">Pasta:</label><br>    
+            <select name="pasta">
+                <option value="carbonara">Carbonara</option>
+                <option value="pesto">Pesto</option>
+                <option value="spaghetti">Spaghetti</option>
+            </select><br>
+            <label for="pasta">Extra Sauce</label>
+            <input type="checkbox" name="spasta" value="addtl-sauce">
+
+            <label for="pasta">Extra Cheese</label>
+            <input type="checkbox" name="cpasta" value="addtl-cheese"><br><br>
+
+            <label for="pasta-quantity">Quantity:</label><br>
+            <input type="number" name="qty" min="1" max="10" value="1"><br><br><br>
+
+            <!-- FRIES -->
+            <h3>Fries</h3>
+            <label for ="fries">Size</label><br>
+            <label for="size">Small</label>
+            <input type="radio" name="fsize" value="small" required>
+
+            <label for="size">Medium</label>
+            <input type="radio" name="fsize" value="medium" required>
+
+            <label for="size">Large</label>
+            <input type="radio" name="fsize" value="large" required><br>
+
+                <!-- FLAVOR -->
+            <label for ="flavor">Flavor</label><br>
+            <label for="fflavor">BBQ</label>
+            <input type="checkbox" name="bbq" value="flavor-bbq">
+
+            <label for="fflavor">Cheese</label>
+            <input type="checkbox" name="cheese" value="flavor-cheese">
+
+            <label for="fflavor">Sour Cream</label>
+            <input type="checkbox" name="sourcream" value="flavor-sourcream"><br><br><br>
+
+
+            <!-- DRINKS -->
+            <h3>Drinks</h3>
+            <label for ="drinks">Choose a Drink:</label><br>
+            <select name="drink-choice">
+                <option value="drink-s">Soda</option>
+                <option value="drink-oj">Orange Juice</option>
+                <option value="drink-i">Iced Tea</option>
+                <option value="drink-l">Lemonade</option>
+            </select><br>
+
+            <label for="size">Small</label>
+            <input type="radio" name="dsize" value="small" required>
+
+            <label for="size">Medium</label>
+            <input type="radio" name="dsize" value="medium" required>
+
+            <label for="size">Large</label>
+            <input type="radio" name="dsize" value="large" required><br>
+
+            <!-- FEEDBACK -->
+            <label for="feedback">How can we improve the order form?</label>
+            <textarea class="textForm" name="feedback"></textarea><br><br>
+
+            <!-- DELIVERY -->
+            <h3>Receiving</h3>
+            <label for="mode">Delivery</label>
+            <input type="radio" name="del" value="delivery" required CHECKED>
+
+            <label for="mode">Pick Up</label>
+            <input type="radio" name="pup" value="pickup" required><br><br>
+
+            <!-- BUTTONS -->
+            <input type="submit" value="Submit Order">
+            <input type="reset" value="Clear Order">
+        </form>
+    </div>
+
+</body>
+</html>
